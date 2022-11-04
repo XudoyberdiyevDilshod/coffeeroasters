@@ -1,0 +1,143 @@
+.collection__inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1111px;
+  padding-top: 126px;
+  background-image: url("../images/collection-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.collection__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.collection__content {
+  width: 100%;
+  max-width: 255px;
+  text-align: center;
+}
+
+.collection__item::before {
+  display: block;
+  width: 100%;
+  max-width: 255px;
+  height: 193px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 255px 193px;
+  content: "";
+}
+
+.collection__item:nth-child(1)::before {
+  background-image: url("../images/Gran-Espresso.png");
+}
+
+.collection__item:nth-child(2)::before {
+  background-image: url("../images/Planalto.png");
+}
+
+.collection__item:nth-child(3)::before {
+  background-image: url("../images/Piccollo.png");
+}
+
+.collection__item:nth-child(4)::before {
+  background-image: url("../images/Danche.png");
+}
+
+.collection-list__title {
+  margin: 0 0 24px;
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+}
+
+.collection-list__text {
+  margin: 0;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+
+@media only screen and (max-width: 940px) {
+  .collection-list__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .collection-list__text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .collection__inner {
+    background-position: top 50px center;
+  }
+
+  .collection__list {
+    flex-direction: column;
+  }
+
+  .collection__item {
+    margin: 0 auto;
+    width: 573px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .collection__item::before {
+    display: inline-block;
+    background-position: top left;
+    background-size: 256px 193px;
+  }
+
+  .collection__content {
+    text-align: left;
+    max-width: 282px;
+  }
+
+  .collection-list__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .collection-list__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .collection__inner {
+    background-position: top 90px center;
+  }
+
+  .collection__item {
+    margin: 0 auto;
+    width: 282px;
+    display: block;
+  }
+
+  .collection__content {
+    text-align: center;
+  }
+
+  .collection__item::before {
+    margin-bottom: 24px;
+    background-position: center center;
+    background-size: 200px 151px;
+  }
+}
