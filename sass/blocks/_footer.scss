@@ -66,4 +66,76 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+    .hero__inner {
+      background-image: url("../images/bgi@2x.jpg");
+    }
+    @media only screen and (max-width: 768px) {
+      .hero__inner {
+        background-image: url("../images/bgi-tablet@2x.jpg");
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      .hero__inner {
+        background-image: url("../images/bgi-mobile@2x.jpg");
+      }
+    }
+    .collection__inner {
+      background-image: url("../images/collection-bg-img@2x.png");
+    }
+    .collection__item:nth-child(1)::before {
+      background-image: url("../images/Gran-Espresso@2x.png");
+    }
+    
+    .collection__item:nth-child(2)::before {
+      background-image: url("../images/Planalto@2x.png");
+    }
+    
+    .collection__item:nth-child(3)::before {
+      background-image: url("../images/Piccollo@2x.png");
+    }
+    
+    .collection__item:nth-child(4)::before {
+      background-image: url("../images/Danche@2x.png");
+    }
+    .about__inner {
+      background-image: url("../images/about-bgi@2x.jpg");
+    }
+    @media only screen and (max-width: 768px) {
+      .about__inner {
+        background-image: url("../images/about-bgi-tablet@2x.jpg");
+      }
+    }
+    
+    @media only screen and (max-width: 576px) {
+      .about__inner {
+        background-image: url("../images/about-bgi-mobile@2x.jpg");
+      }
+    }
+    .commitment__inner {
+      background-image: url("../images/commitment@2x.jpg");
+    }
+    @media only screen and (max-width: 768px) {  
+      .commitment__inner {
+        background-image: url("../images/commitment-tablet@2x.jpg");
+      }
+    }
+    
+    @media only screen and (max-width: 576px) {    
+      .commitment__inner {
+        background-image: url("../images/commitment-mobile@2x.jpg");
+      }
+    }
+    .capuchino {
+      background-image: url("../images/capuchino@2x.jpg");
+    }
+    @media only screen and (max-width: 768px) {    
+      .capuchino {
+        background-image: url("../images/capuchino-tablet@2x.jpg");
+      }
+    }
+    @media only screen and (max-width: 576px) {   
+      .capuchino {
+        background-image: url("../images/capuchino-mobile@2x.jpg");
+      }
+    }
 }
