@@ -1,0 +1,65 @@
+.about__inner {
+  padding: 137px 0 137px 85px;
+  background-image: url("../images/about-bgi.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+}
+
+.about__content {
+  width: 100%;
+  max-width: 445px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fefcf7;
+}
+
+.about__text {
+  margin: 0;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+}
+
+@media only screen and (max-width: 768px) {
+  .about__inner {
+    padding: 118px 0 118px 58px;
+    background-image: url("../images/about-bgi-tablet.jpg");
+  }
+  .about__content {
+    max-width: 398px;
+  }
+  .about__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about__inner {
+    padding: 111px 24px 87px;
+    background-image: url("../images/about-bgi-mobile.jpg");
+  }
+  .about__content {
+    max-width: 279px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}

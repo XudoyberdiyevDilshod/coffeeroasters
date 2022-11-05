@@ -1,11 +1,27 @@
 .works {
-    padding: 200px 0;
+  padding: 200px 0;
 }
 
 .works__inner {
   width: 100%;
   max-width: 1045px;
   padding-left: 85px;
+}
+
+.works__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+
+.works__pic {
+  width: 100%;
+  max-width: 800px;
 }
 
 .circle + .circle {
@@ -27,6 +43,7 @@
   top: 12px;
   left: 28px;
   display: inline-block;
+
   width: 349px;
   border: 2px solid #fdd6ba;
 }
@@ -43,7 +60,7 @@
 
 .works__item {
   width: 100%;
-  width: 285px;
+  max-width: 285px;
 }
 
 .works-list__num {
@@ -71,4 +88,67 @@
   font-size: 16px;
   line-height: 26px;
   color: #333d4b;
+}
+
+@media only screen and (max-width: 912px) {
+  .circle + .circle {
+    margin-left: 300px;
+  }
+  .line {
+    width: 304px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .works {
+    padding: 144px 0;
+  }
+
+  .works__inner {
+    max-width: 689px;
+    padding-left: 0;
+  }
+  .circle + .circle {
+    margin-left: 198px;
+  }
+  .line {
+    width: 202px;
+  }
+  .work-list {
+    gap: 10px;
+  }
+  .works-list__title {
+    margin: 42px 0 38px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .works-list__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .works {
+    padding: 550px 0 120px;
+  }
+
+  .works__inner {
+    text-align: center;
+  }
+
+  .works__title {
+    margin-bottom: 80px;
+  }
+
+  .work-list {
+    flex-direction: column;
+    gap: 56px;
+  }
+  .works-list__title {
+    margin: 24px 0;
+  }
+  .works__pic {
+    display: none;
+  }
 }

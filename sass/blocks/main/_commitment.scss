@@ -1,0 +1,88 @@
+.commitment {
+  padding: 168px 0 120px;
+}
+
+.commitment__inner {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/commitment.jpg");
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.commitment__content {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+}
+
+.commitment__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: "Fraunces 9pt";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333d4b;
+}
+
+.commitment__text {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+  .commitment {
+    padding: 144px 0 130px;
+  }
+
+  .commitment__inner {
+    max-width: 689px;
+    background-image: url("../images/commitment-tablet.jpg");
+    align-items: flex-start;
+  }
+
+  .commitment__content {
+    max-width: 339px;
+    margin-left: auto;
+  }
+
+  .commitment__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .commitment__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .commitment {
+    padding: 120px 0 280px;
+  }
+
+  .commitment__inner {
+    background-image: url("../images/commitment-mobile.jpg");
+    background-position: top center;
+  }
+
+  .commitment__content {
+    padding-top: 448px;
+    max-width: 327px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

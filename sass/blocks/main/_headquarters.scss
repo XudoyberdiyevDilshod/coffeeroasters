@@ -1,0 +1,127 @@
+.headquarters {
+  padding-bottom: 168px;
+}
+
+.headquarters__inner {
+  width: 100%;
+  max-width: 1045px;
+  margin: 0 auto;
+}
+
+.headquarters__title {
+  margin: 0;
+  margin-bottom: 72px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+
+.headquarters__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+
+.headquarters__item {
+  width: 100%;
+  max-width: 285px;
+}
+
+.headquarters__item::before {
+  display: block;
+  height: 50px;
+  margin-bottom: 45px;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  content: "";
+}
+
+.headquarters__item:nth-child(1)::before {
+  background-image: url("../images/UK.svg");
+}
+
+.headquarters__item:nth-child(2)::before {
+  background-image: url("../images/Canada.svg");
+}
+
+.headquarters__item:nth-child(3)::before {
+  background-image: url("../images/Australia.svg");
+}
+
+.headquarters-list__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+}
+
+.headquarters__list--list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.headquarters__list--item {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+
+@media only screen and (max-width: 768px) {
+  .headquarters {
+    padding-bottom: 144px;
+  }
+
+  .headquarters__inner {
+    max-width: 688px;
+  }
+
+  .headquarters__list {
+    gap: 9px;
+  }
+
+  .headquarters-list__title {
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .headquarters {
+    padding-bottom: 120px;
+  }
+
+  .headquarters__inner {
+    text-align: center;
+  }
+
+  .headquarters__list {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .headquarters-list__title {
+    margin-bottom: 22px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .headquarters__item::before {
+    background-position: center;
+  }
+}
