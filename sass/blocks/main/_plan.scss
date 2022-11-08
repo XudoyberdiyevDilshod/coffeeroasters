@@ -1,0 +1,47 @@
+.plan {
+  padding-bottom: 155px;
+}
+
+.plan__inner {
+  padding: 134px 0 134px 85px;
+  background-image: url("../images/nescafe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #a2a2a2;
+  border-radius: 10px;
+}
+
+.plan__content {
+  width: 100%;
+  max-width: 486px;
+}
+
+.plan__title {
+  margin: 0 0 32px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fefcf7;
+}
+
+.plan__text {
+  margin: 0;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+
+}
