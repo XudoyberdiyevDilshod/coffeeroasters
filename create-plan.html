@@ -90,37 +90,37 @@
                 <div class="menu__inner">
                     <ul class="menu__list menu-list">
                         <li class="menu__item">
-                            <a class="menu-list__link" href="#">
+                            <a class="menu-list__link" href="#menu__strong">
                                 <strong class="menu__strong">01</strong>
                                 Preferences
                             </a>                            
                         </li>
                         <li class="menu__item">
-                            <a class="menu-list__link" href="#">
+                            <a class="menu-list__link" href="#menu__strong">
                                 <strong class="menu__strong">02</strong>
                                 Bean Type
                             </a>                            
                         </li>
                         <li class="menu__item">
-                            <a class="menu-list__link" href="#">
+                            <a class="menu-list__link" href="#menu__strong">
                                 <strong class="menu__strong">03</strong>
                                 Quantity
                             </a>                            
                         </li>
                         <li class="menu__item">
-                            <a class="menu-list__link" href="#">
+                            <a class="menu-list__link" href="#menu__strong">
                                 <strong class="menu__strong">04</strong>
                                 Grind Option
                             </a>                            
                         </li>
                         <li class="menu__item">
-                            <a class="menu-list__link" href="#">
+                            <a class="menu-list__link" href="#menu__strong">
                                 <strong class="menu__strong">05</strong>
                                 Deliveries
                             </a>                    
                         </li>
                     </ul>
-                    <div class="menu__box">
+                    <form class="menu__box" action="https://echo.htmlacademy.ru" target="_blank">
                         <details class="box" open>
                             <summary class="box__row">
                                 <h3 class="box__title">How do you drink your coffee?</h3>
@@ -143,6 +143,8 @@
                                         class="box__input visually-hidden"
                                         name="How do you drink your coffee"
                                         type="radio"
+                                        value="Capsule"
+                                        required
                                     />
                                     <div class="box__card card">
                                         <h4 class="card__title">Capsule</h4>
@@ -156,11 +158,13 @@
                                         class="box__input visually-hidden"
                                         name="How do you drink your coffee"
                                         type="radio"
+                                        value="Filter"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Filter</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            For pour over or drip methods like Aeropress, Chemex, and V60
                                         </p>
                                     </div>
                                 </label>
@@ -169,11 +173,13 @@
                                         class="box__input visually-hidden"
                                         name="How do you drink your coffee"
                                         type="radio"
+                                        value="Espresso"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Espresso</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            Dense and finely ground beans for an intense, flavorful experience
                                         </p>
                                     </div>
                                 </label>
@@ -181,7 +187,7 @@
                         </details>
                         <details class="box">
                             <summary class="box__row">
-                                <h3 class="box__title">How do you drink your coffee?</h3>
+                                <h3 class="box__title">What type of coffee?</h3>
                                 <svg
                                     width="19"
                                     height="13"
@@ -199,39 +205,45 @@
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="What type of coffee?"
                                         type="radio"
+                                        value="Single Origin"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Single Origin</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            Distinct, high quality coffee from a specific family-owned farm
                                         </p>
                                     </div>
                                 </label>
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="What type of coffee?"
                                         type="radio"
+                                        value="Decaf"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Decaf</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            Just like regular coffee, except the caffeine has been removed
                                         </p>
                                     </div>
                                 </label>
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="What type of coffee?"
                                         type="radio"
+                                        value="Blended"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Blended</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            Combination of two or three dark roasted beans of organic coffees
                                         </p>
                                     </div>
                                 </label>
@@ -239,7 +251,7 @@
                         </details>
                         <details class="box">
                             <summary class="box__row">
-                                <h3 class="box__title">How do you drink your coffee?</h3>
+                                <h3 class="box__title">How much would you like?</h3>
                                 <svg
                                     width="19"
                                     height="13"
@@ -257,39 +269,45 @@
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="How much would you like?"
                                         type="radio"
+                                        value="250g"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">250g</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            Perfect for the solo drinker. Yields about 12 delicious cups.
                                         </p>
                                     </div>
                                 </label>
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="How much would you like?"
                                         type="radio"
+                                        value="500g"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">500g</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            Perfect option for a couple. Yields about 40 delectable cups.
                                         </p>
                                     </div>
                                 </label>
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="How much would you like?"
                                         type="radio"
+                                        value="1000g"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">1000g</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            Perfect for offices and events. Yields about 90 delightful cups.
                                         </p>
                                     </div>
                                 </label>
@@ -297,7 +315,7 @@
                         </details>
                         <details class="box">
                             <summary class="box__row">
-                                <h3 class="box__title">How do you drink your coffee?</h3>
+                                <h3 class="box__title">Want us to grind them?</h3>
                                 <svg
                                     width="19"
                                     height="13"
@@ -315,39 +333,45 @@
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="Want us to grind them?"
                                         type="radio"
+                                        value="Wholebean"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Wholebean</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            Best choice if you cherish the full sensory experience
                                         </p>
                                     </div>
                                 </label>
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="Want us to grind them?"
                                         type="radio"
+                                        value="Filter"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Filter</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            For drip or pour-over coffee methods such as V60 or Aeropress
                                         </p>
                                     </div>
                                 </label>
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="Want us to grind them?"
                                         type="radio"
+                                        value="Cafetiére"
+                                        required
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Cafetiére</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                             Course ground beans specially suited for french press coffee
                                         </p>
                                     </div>
                                 </label>
@@ -355,7 +379,7 @@
                         </details>
                         <details class="box">
                             <summary class="box__row">
-                                <h3 class="box__title">How do you drink your coffee?</h3>
+                                <h3 class="box__title">How often should we deliver?</h3>
                                 <svg
                                     width="19"
                                     height="13"
@@ -373,45 +397,53 @@
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="How often should we deliver?"
                                         type="radio"
+                                        value="Every week"
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Every week</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            $7.20 per shipment. Includes free first-class shipping.
                                         </p>
                                     </div>
                                 </label>
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="How often should we deliver?"
                                         type="radio"
+                                        value="Every 2 weeks"
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Every 2 weeks</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            $9.60 per shipment. Includes free priority shipping.
                                         </p>
                                     </div>
                                 </label>
                                 <label class="box__label">
                                     <input
                                         class="box__input visually-hidden"
-                                        name="How do you drink your coffee"
+                                        name="How often should we deliver?"
                                         type="radio"
+                                        value="Every month"
                                     />
                                     <div class="box__card card">
-                                        <h4 class="card__title">Capsule</h4>
+                                        <h4 class="card__title">Every month</h4>
                                         <p class="card__text">
-                                            Compatible with Nespresso systems and similar brewers
+                                            $12.00 per shipment. Includes free priority shipping.
                                         </p>
                                     </div>
                                 </label>
                             </div>
                         </details>
-                    </div>
+                        <div class="menu__content menu-content">
+                            <small class="menu-content__small">Order Summary</small>
+                            <p class="menu-content__text">“I drink my coffee as <strong class="menu__strong">Filter</strong>, with a <strong class="menu__strong">Decaf</strong> type of bean. <strong class="menu__strong">250g</strong> ground ala <strong class="menu__strong">Cafetiére</strong>, sent to me <strong class="menu__strong">Every Week</strong>.”</p>
+                        </div>
+                        <button class="form__btn" type="submit">Create my plan!</button>
+                    </form>
                 </div>
             </div>
         </section>
